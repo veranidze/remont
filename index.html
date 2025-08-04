@@ -424,7 +424,7 @@
                              <div class="space-y-4">
                                  <div>
                                      <label for="name" class="block text-sm font-medium text-gray-700">Ваше имя</label>
-                                     <input type="text" name="name" id="name" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" required>
+                                     <input type="text" name="name" id="name" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" required minlength="2" maxlength="50" pattern="[А-Яа-яЁёA-Za-z\s]+" title="Имя должно содержать только буквы и пробелы (минимум 2 символа)">
                                  </div>
                                  <div class="phone-container">
                                      <label for="phone" class="block text-sm font-medium text-gray-700">Телефон</label>
@@ -440,7 +440,7 @@
                                  </div>
                                  <div>
                                      <label for="message" class="block text-sm font-medium text-gray-700">Сообщение</label>
-                                     <textarea name="message" id="message" rows="4" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"></textarea>
+                                     <textarea name="message" id="message" rows="4" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" maxlength="500" title="Максимум 500 символов"></textarea>
                                  </div>
                                  <div>
                                      <button type="submit" class="text-base md:text-lg px-8 py-3 md:px-10 md:py-4 shadow-lg rounded-full bg-blue-500 text-white font-bold hover:bg-blue-600 hover:shadow-xl hover:transform hover:scale-105 transition-all duration-300 w-full">Отправить</button>
@@ -527,7 +527,7 @@
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div>
                                     <label for="modal-name-standard" class="block text-sm font-medium text-gray-700">Ваше имя</label>
-                                    <input type="text" name="name" id="modal-name-standard" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" required>
+                                    <input type="text" name="name" id="modal-name-standard" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" required minlength="2" maxlength="50" pattern="[А-Яа-яЁёA-Za-z\s]+" title="Имя должно содержать только буквы и пробелы (минимум 2 символа)">
                                 </div>
                                 <div class="phone-container">
                                     <label for="modal-phone-standard" class="block text-sm font-medium text-gray-700">Телефон</label>
@@ -544,7 +544,7 @@
                             </div>
                             <div class="mt-4">
                                 <label for="modal-message-standard" class="block text-sm font-medium text-gray-700">Сообщение</label>
-                                <textarea name="message" id="modal-message-standard" rows="3" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" placeholder="Укажите площадь квартиры и ваши пожелания"></textarea>
+                                <textarea name="message" id="modal-message-standard" rows="3" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" placeholder="Укажите площадь квартиры и ваши пожелания" maxlength="500" title="Максимум 500 символов"></textarea>
                             </div>
                             <div class="mt-4">
                                 <button type="submit" class="w-full px-6 py-3 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-600 transition-colors duration-300">Отправить заявку</button>
@@ -604,7 +604,7 @@
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div>
                                     <label for="modal-name-premium" class="block text-sm font-medium text-gray-700">Ваше имя</label>
-                                    <input type="text" name="name" id="modal-name-premium" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500" required>
+                                    <input type="text" name="name" id="modal-name-premium" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500" required minlength="2" maxlength="50" pattern="[А-Яа-яЁёA-Za-z\s]+" title="Имя должно содержать только буквы и пробелы (минимум 2 символа)">
                                 </div>
                                 <div class="phone-container">
                                     <label for="modal-phone-premium" class="block text-sm font-medium text-gray-700">Телефон</label>
@@ -621,7 +621,7 @@
                             </div>
                             <div class="mt-4">
                                 <label for="modal-message-premium" class="block text-sm font-medium text-gray-700">Сообщение</label>
-                                <textarea name="message" id="modal-message-premium" rows="3" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500" placeholder="Укажите площадь квартиры и ваши пожелания по дизайну"></textarea>
+                                <textarea name="message" id="modal-message-premium" rows="3" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500" placeholder="Укажите площадь квартиры и ваши пожелания по дизайну" maxlength="500" title="Максимум 500 символов"></textarea>
                             </div>
                             <div class="mt-4">
                                 <button type="submit" class="w-full px-6 py-3 bg-green-500 text-white font-bold rounded-lg hover:bg-green-600 transition-colors duration-300">Отправить заявку</button>
@@ -681,7 +681,7 @@
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div>
                                     <label for="modal-name-luxury" class="block text-sm font-medium text-gray-700">Ваше имя</label>
-                                    <input type="text" name="name" id="modal-name-luxury" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500" required>
+                                    <input type="text" name="name" id="modal-name-luxury" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500" required minlength="2" maxlength="50" pattern="[А-Яа-яЁёA-Za-z\s]+" title="Имя должно содержать только буквы и пробелы (минимум 2 символа)">
                                 </div>
                                 <div class="phone-container">
                                     <label for="modal-phone-luxury" class="block text-sm font-medium text-gray-700">Телефон</label>
@@ -698,7 +698,7 @@
                             </div>
                             <div class="mt-4">
                                 <label for="modal-message-luxury" class="block text-sm font-medium text-gray-700">Сообщение</label>
-                                <textarea name="message" id="modal-message-luxury" rows="3" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500" placeholder="Расскажите о ваших идеях и пожеланиях для эксклюзивного проекта"></textarea>
+                                <textarea name="message" id="modal-message-luxury" rows="3" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500" placeholder="Расскажите о ваших идеях и пожеланиях для эксклюзивного проекта" maxlength="500" title="Максимум 500 символов"></textarea>
                             </div>
                             <div class="mt-4">
                                 <button type="submit" class="w-full px-6 py-3 bg-yellow-500 text-white font-bold rounded-lg hover:bg-yellow-600 transition-colors duration-300">Отправить заявку</button>
@@ -735,8 +735,121 @@
             // Запускаем смену изображений каждые 7 секунд
             setInterval(changeBackgroundImage, 7000);
             
+            // Функция для валидации формы
+            function validateForm(formData, formElement) {
+                const errors = [];
+                
+                // Очищаем предыдущие ошибки
+                clearValidationErrors(formElement);
+                
+                // Проверка имени
+                const nameInput = formElement.querySelector('input[name="name"]');
+                if (!formData.name || formData.name.trim().length < 2) {
+                    errors.push('Имя должно содержать минимум 2 символа');
+                    showFieldError(nameInput, 'Имя должно содержать минимум 2 символа');
+                } else if (!/^[А-Яа-яЁёA-Za-z\s]+$/.test(formData.name.trim())) {
+                    errors.push('Имя должно содержать только буквы и пробелы');
+                    showFieldError(nameInput, 'Имя должно содержать только буквы и пробелы');
+                }
+                
+                // Проверка телефона
+                const phoneInput = formElement.querySelector('input[name="phone"]');
+                if (!formData.phone) {
+                    errors.push('Телефон обязателен для заполнения');
+                    showFieldError(phoneInput, 'Телефон обязателен для заполнения');
+                } else {
+                    const phoneDigits = formData.phone.replace(/\D/g, '');
+                    if (phoneDigits.length < 9) {
+                        errors.push('Телефон должен содержать минимум 9 цифр');
+                        showFieldError(phoneInput, 'Телефон должен содержать минимум 9 цифр');
+                    }
+                }
+                
+                // Проверка email если есть
+                const emailInput = formElement.querySelector('input[name="email"]');
+                if (formData.email && formData.email.trim()) {
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(formData.email.trim())) {
+                        errors.push('Введите корректный email адрес');
+                        if (emailInput) showFieldError(emailInput, 'Введите корректный email адрес');
+                    }
+                }
+                
+                // Проверка сообщения если оно обязательно
+                const messageInput = formElement.querySelector('textarea[name="message"]');
+                if (messageInput && messageInput.hasAttribute('required') && (!formData.message || formData.message.trim().length < 10)) {
+                    errors.push('Сообщение должно содержать минимум 10 символов');
+                    showFieldError(messageInput, 'Сообщение должно содержать минимум 10 символов');
+                }
+                
+                return errors;
+            }
+            
+            // Функция для отображения ошибки поля
+            function showFieldError(input, message) {
+                if (!input) return;
+                
+                input.classList.add('border-red-500', 'focus:ring-red-500', 'focus:border-red-500');
+                input.classList.remove('border-gray-300', 'focus:ring-blue-500', 'focus:border-blue-500', 'focus:ring-green-500', 'focus:border-green-500', 'focus:ring-yellow-500', 'focus:border-yellow-500');
+                
+                // Создаем элемент ошибки
+                const errorElement = document.createElement('div');
+                errorElement.className = 'text-red-500 text-sm mt-1 validation-error';
+                errorElement.textContent = message;
+                
+                // Вставляем после поля ввода
+                input.parentNode.insertBefore(errorElement, input.nextSibling);
+            }
+            
+            // Функция для очистки ошибок валидации
+            function clearValidationErrors(formElement) {
+                // Удаляем все сообщения об ошибках
+                const errorElements = formElement.querySelectorAll('.validation-error');
+                errorElements.forEach(el => el.remove());
+                
+                // Восстанавливаем стили полей
+                const inputs = formElement.querySelectorAll('input, textarea');
+                inputs.forEach(input => {
+                    input.classList.remove('border-red-500', 'focus:ring-red-500', 'focus:border-red-500');
+                    if (!input.classList.contains('border-gray-300')) {
+                        input.classList.add('border-gray-300');
+                    }
+                    
+                    // Восстанавливаем правильные цвета фокуса
+                    const form = input.closest('form');
+                    if (form) {
+                        if (form.id === 'premiumTariffForm') {
+                            input.classList.add('focus:ring-green-500', 'focus:border-green-500');
+                        } else if (form.id === 'luxuryTariffForm') {
+                            input.classList.add('focus:ring-yellow-500', 'focus:border-yellow-500');
+                        } else {
+                            input.classList.add('focus:ring-blue-500', 'focus:border-blue-500');
+                        }
+                    }
+                });
+            }
+            
             // Функция для отправки лидов
             async function sendLead(formData, formElement) {
+                // Валидация формы с визуальными индикаторами
+                const validationErrors = validateForm(formData, formElement);
+                if (validationErrors.length > 0) {
+                    // Фокусируемся на первом поле с ошибкой
+                    const firstErrorField = formElement.querySelector('.border-red-500');
+                    if (firstErrorField) {
+                        firstErrorField.focus();
+                        firstErrorField.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                    return;
+                }
+                
+                // Показываем индикатор загрузки
+                const submitButton = formElement.querySelector('button[type="submit"]');
+                const originalText = submitButton.textContent;
+                submitButton.textContent = 'Отправка...';
+                submitButton.disabled = true;
+                submitButton.classList.add('opacity-75');
+                
                 try {
                     const response = await fetch('https://lizaadver-automatics.online/webhook/lead', {
                         method: 'POST',
@@ -745,27 +858,122 @@
                     });
                     
                     if (response.ok) {
-                        alert('Заявка успешно отправлена! Мы свяжемся с вами в ближайшее время.');
+                        // Показываем сообщение об успехе
+                        showSuccessMessage(formElement, 'Заявка успешно отправлена! Мы свяжемся с вами в ближайшее время.');
+                        
+                        // Очищаем форму
                         formElement.reset();
-                        // Закрываем модальное окно если это форма из модала
-                        if (formElement.closest('[x-show]')) {
-                            // Используем Alpine.js для закрытия модала
-                            try {
-                                const alpineComponent = document.querySelector('[x-data*="activeModal"]');
-                                if (alpineComponent && alpineComponent._x_dataStack) {
-                                    alpineComponent._x_dataStack[0].activeModal = null;
+                        
+                        // Очищаем ошибки валидации
+                        clearValidationErrors(formElement);
+                        
+                        // Сбрасываем плейсхолдеры телефонов
+                        const phoneInputs = formElement.querySelectorAll('input[type="tel"]');
+                        phoneInputs.forEach(input => {
+                            const countrySelect = input.closest('div').querySelector('select');
+                            if (countrySelect) {
+                                const selectedOption = countrySelect.options[countrySelect.selectedIndex];
+                                const mask = selectedOption.getAttribute('data-mask');
+                                if (mask) {
+                                    let placeholder = '';
+                                    let foundCode = false;
+                                    for (let i = 0; i < mask.length; i++) {
+                                        if (mask[i] === 'X') {
+                                            if (!foundCode) {
+                                                foundCode = true;
+                                                continue;
+                                            }
+                                            placeholder += Math.floor(Math.random() * 10);
+                                        }
+                                    }
+                                    input.placeholder = placeholder;
                                 }
-                            } catch (error) {
-                                console.log('Не удалось закрыть модальное окно автоматически');
                             }
+                        });
+                        
+                        // Закрываем модальное окно если это форма из модала (с задержкой)
+                        if (formElement.closest('[x-show]')) {
+                            setTimeout(() => {
+                                try {
+                                    const alpineComponent = document.querySelector('[x-data*="activeModal"]');
+                                    if (alpineComponent && alpineComponent._x_dataStack) {
+                                        alpineComponent._x_dataStack[0].activeModal = null;
+                                    }
+                                } catch (error) {
+                                    console.log('Не удалось закрыть модальное окно автоматически');
+                                }
+                            }, 2000);
                         }
                     } else {
-                        alert('Произошла ошибка при отправке заявки. Попробуйте еще раз.');
+                        const errorText = await response.text();
+                        console.error('Server error:', errorText);
+                        showErrorMessage(formElement, 'Произошла ошибка при отправке заявки. Попробуйте еще раз.');
                     }
                 } catch (error) {
                     console.error('Ошибка отправки:', error);
-                    alert('Произошла ошибка при отправке заявки. Проверьте подключение к интернету.');
+                    showErrorMessage(formElement, 'Произошла ошибка при отправке заявки. Проверьте подключение к интернету.');
+                } finally {
+                    // Восстанавливаем кнопку
+                    submitButton.textContent = originalText;
+                    submitButton.disabled = false;
+                    submitButton.classList.remove('opacity-75');
                 }
+            }
+            
+            // Функция для отображения сообщения об успехе
+            function showSuccessMessage(formElement, message) {
+                const messageElement = document.createElement('div');
+                messageElement.className = 'bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4 success-message';
+                messageElement.innerHTML = `
+                    <div class="flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span>${message}</span>
+                    </div>
+                `;
+                
+                // Удаляем предыдущие сообщения
+                const existingMessages = formElement.querySelectorAll('.success-message, .error-message');
+                existingMessages.forEach(el => el.remove());
+                
+                // Вставляем в начало формы
+                formElement.insertBefore(messageElement, formElement.firstChild);
+                
+                // Автоматически удаляем через 5 секунд
+                setTimeout(() => {
+                    if (messageElement.parentNode) {
+                        messageElement.remove();
+                    }
+                }, 5000);
+            }
+            
+            // Функция для отображения сообщения об ошибке
+            function showErrorMessage(formElement, message) {
+                const messageElement = document.createElement('div');
+                messageElement.className = 'bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4 error-message';
+                messageElement.innerHTML = `
+                    <div class="flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span>${message}</span>
+                    </div>
+                `;
+                
+                // Удаляем предыдущие сообщения
+                const existingMessages = formElement.querySelectorAll('.success-message, .error-message');
+                existingMessages.forEach(el => el.remove());
+                
+                // Вставляем в начало формы
+                formElement.insertBefore(messageElement, formElement.firstChild);
+                
+                // Автоматически удаляем через 5 секунд
+                setTimeout(() => {
+                    if (messageElement.parentNode) {
+                        messageElement.remove();
+                    }
+                }, 5000);
             }
             
             // Функция для получения полного номера телефона
@@ -775,9 +983,86 @@
                 return countryCode + ' ' + phoneNumber;
             }
             
+            // Функция для добавления валидации в реальном времени
+            function addRealTimeValidation(form) {
+                const inputs = form.querySelectorAll('input, textarea');
+                inputs.forEach(input => {
+                    // Валидация при потере фокуса
+                    input.addEventListener('blur', function() {
+                        validateSingleField(this, form);
+                    });
+                    
+                    // Очистка ошибок при начале ввода
+                    input.addEventListener('input', function() {
+                        if (this.classList.contains('border-red-500')) {
+                            clearSingleFieldError(this, form);
+                        }
+                    });
+                });
+            }
+            
+            // Функция для валидации одного поля
+            function validateSingleField(input, form) {
+                const name = input.name;
+                const value = input.value.trim();
+                
+                // Очищаем предыдущие ошибки для этого поля
+                clearSingleFieldError(input, form);
+                
+                if (name === 'name') {
+                    if (!value || value.length < 2) {
+                        showFieldError(input, 'Имя должно содержать минимум 2 символа');
+                    } else if (!/^[А-Яа-яЁёA-Za-z\s]+$/.test(value)) {
+                        showFieldError(input, 'Имя должно содержать только буквы и пробелы');
+                    }
+                } else if (name === 'phone') {
+                    const phoneDigits = value.replace(/\D/g, '');
+                    if (!value) {
+                        showFieldError(input, 'Телефон обязателен для заполнения');
+                    } else if (phoneDigits.length < 9) {
+                        showFieldError(input, 'Телефон должен содержать минимум 9 цифр');
+                    }
+                } else if (name === 'email' && value) {
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(value)) {
+                        showFieldError(input, 'Введите корректный email адрес');
+                    }
+                } else if (name === 'message' && input.hasAttribute('required')) {
+                    if (!value || value.length < 10) {
+                        showFieldError(input, 'Сообщение должно содержать минимум 10 символов');
+                    }
+                }
+            }
+            
+            // Функция для очистки ошибки одного поля
+            function clearSingleFieldError(input, form) {
+                // Удаляем сообщение об ошибке для этого поля
+                const nextElement = input.nextSibling;
+                if (nextElement && nextElement.classList && nextElement.classList.contains('validation-error')) {
+                    nextElement.remove();
+                }
+                
+                // Восстанавливаем стили поля
+                input.classList.remove('border-red-500', 'focus:ring-red-500', 'focus:border-red-500');
+                if (!input.classList.contains('border-gray-300')) {
+                    input.classList.add('border-gray-300');
+                }
+                
+                // Восстанавливаем правильные цвета фокуса
+                if (form.id === 'premiumTariffForm') {
+                    input.classList.add('focus:ring-green-500', 'focus:border-green-500');
+                } else if (form.id === 'luxuryTariffForm') {
+                    input.classList.add('focus:ring-yellow-500', 'focus:border-yellow-500');
+                } else {
+                    input.classList.add('focus:ring-blue-500', 'focus:border-blue-500');
+                }
+            }
+            
             // Обработчик для основной контактной формы
             const mainContactForm = document.getElementById('mainContactForm');
             if (mainContactForm) {
+                addRealTimeValidation(mainContactForm);
+                
                 mainContactForm.addEventListener('submit', async (e) => {
                     e.preventDefault();
                     const formData = new FormData(e.target);
@@ -795,6 +1080,8 @@
             // Обработчик для формы тарифа "Стандарт"
             const standardTariffForm = document.getElementById('standardTariffForm');
             if (standardTariffForm) {
+                addRealTimeValidation(standardTariffForm);
+                
                 standardTariffForm.addEventListener('submit', async (e) => {
                     e.preventDefault();
                     const formData = new FormData(e.target);
@@ -812,6 +1099,8 @@
             // Обработчик для формы тарифа "Премиум"
             const premiumTariffForm = document.getElementById('premiumTariffForm');
             if (premiumTariffForm) {
+                addRealTimeValidation(premiumTariffForm);
+                
                 premiumTariffForm.addEventListener('submit', async (e) => {
                     e.preventDefault();
                     const formData = new FormData(e.target);
@@ -829,6 +1118,8 @@
             // Обработчик для формы тарифа "Люкс"
             const luxuryTariffForm = document.getElementById('luxuryTariffForm');
             if (luxuryTariffForm) {
+                addRealTimeValidation(luxuryTariffForm);
+                
                 luxuryTariffForm.addEventListener('submit', async (e) => {
                     e.preventDefault();
                     const formData = new FormData(e.target);
@@ -845,7 +1136,11 @@
             
             // Функция для применения маски телефона
              function applyPhoneMask(input, mask) {
-                 input.addEventListener('input', function(e) {
+                 // Удаляем старые обработчики
+                 const newInput = input.cloneNode(true);
+                 input.parentNode.replaceChild(newInput, input);
+                 
+                 newInput.addEventListener('input', function(e) {
                      let value = e.target.value.replace(/\D/g, ''); // Только цифры
                      
                      // Ограничение на максимум 9 цифр
@@ -869,7 +1164,7 @@
                  });
                  
                  // Ограничение ввода только цифр и максимум 9 цифр
-                 input.addEventListener('keypress', function(e) {
+                 newInput.addEventListener('keypress', function(e) {
                      const currentDigits = e.target.value.replace(/\D/g, '').length;
                      if (!/\d/.test(e.key) && !['Backspace', 'Delete', 'Tab', 'Enter', 'ArrowLeft', 'ArrowRight'].includes(e.key)) {
                          e.preventDefault();
@@ -879,16 +1174,50 @@
                          e.preventDefault();
                      }
                  });
+                 
+                 // Обработчик для вставки текста
+                 newInput.addEventListener('paste', function(e) {
+                     e.preventDefault();
+                     const paste = (e.clipboardData || window.clipboardData).getData('text');
+                     const digits = paste.replace(/\D/g, '').substring(0, 9);
+                     
+                     let formattedValue = '';
+                     let valueIndex = 0;
+                     
+                     for (let i = 0; i < mask.length && valueIndex < digits.length; i++) {
+                         if (mask[i] === 'X') {
+                             formattedValue += digits[valueIndex];
+                             valueIndex++;
+                         } else {
+                             formattedValue += mask[i];
+                         }
+                     }
+                     
+                     e.target.value = formattedValue;
+                 });
+                 
+                 return newInput;
              }
             
             // Функция для обновления маски при смене страны
             function setupPhoneMask(phoneInput, countrySelect) {
-                if (!phoneInput || !countrySelect) return;
+                if (!phoneInput || !countrySelect) {
+                    console.warn('Phone input or country select not found');
+                    return;
+                }
+                
+                let currentInput = phoneInput;
                 
                 const updateMask = () => {
                      const selectedOption = countrySelect.options[countrySelect.selectedIndex];
                      const mask = selectedOption.getAttribute('data-mask');
-                     phoneInput.value = ''; // Очищаем поле при смене маски
+                     
+                     if (!mask) {
+                         console.warn('No mask found for selected option');
+                         return;
+                     }
+                     
+                     currentInput.value = ''; // Очищаем поле при смене маски
                      
                      // Создаем подсказку с цифрами после кода страны
                      let placeholder = '';
@@ -902,35 +1231,31 @@
                              placeholder += Math.floor(Math.random() * 10); // Случайные цифры для примера
                          }
                      }
-                     phoneInput.placeholder = placeholder;
-                     
-                     // Удаляем старые обработчики
-                     const newInput = phoneInput.cloneNode(true);
-                     phoneInput.parentNode.replaceChild(newInput, phoneInput);
+                     currentInput.placeholder = placeholder;
                      
                      // Применяем новую маску
-                     applyPhoneMask(newInput, mask);
-                     
-                     return newInput;
+                     currentInput = applyPhoneMask(currentInput, mask);
                  };
                  
                  countrySelect.addEventListener('change', updateMask);
                  
                  // Применяем маску по умолчанию
                  const defaultMask = countrySelect.options[countrySelect.selectedIndex].getAttribute('data-mask');
-                 let defaultPlaceholder = '';
-                 let foundCode = false;
-                 for (let i = 0; i < defaultMask.length; i++) {
-                     if (defaultMask[i] === 'X') {
-                         if (!foundCode) {
-                             foundCode = true;
-                             continue;
+                 if (defaultMask) {
+                     let defaultPlaceholder = '';
+                     let foundCode = false;
+                     for (let i = 0; i < defaultMask.length; i++) {
+                         if (defaultMask[i] === 'X') {
+                             if (!foundCode) {
+                                 foundCode = true;
+                                 continue;
+                             }
+                             defaultPlaceholder += Math.floor(Math.random() * 10);
                          }
-                         defaultPlaceholder += Math.floor(Math.random() * 10);
                      }
+                     currentInput.placeholder = defaultPlaceholder;
+                     currentInput = applyPhoneMask(currentInput, defaultMask);
                  }
-                 phoneInput.placeholder = defaultPlaceholder;
-                 applyPhoneMask(phoneInput, defaultMask);
             }
             
             // Инициализация масок для всех форм
